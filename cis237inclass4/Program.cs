@@ -25,6 +25,29 @@ namespace cis237inclass4
             {
                 Console.WriteLine(x.Data);
             }
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            // use the retrieve method to start at the head of the linked list, walk through it, and return the value that is passed in index.
+            Console.WriteLine(myLinkedList.Retrieve(2));
+            Console.WriteLine(myLinkedList.Retrieve(1));
+
+            Console.WriteLine();
+            Console.WriteLine();
+            // Do some deletes of the linked list
+            // this will delete the first one in the list
+            myLinkedList.delete(0);
+            // now there are 3, and this will delete the middle one
+            myLinkedList.delete(1);
+            // now there are 3, and this will delete the last one
+            myLinkedList.delete(1);
+
+
+            for (Node x = myLinkedList.Head; x != null; x = x.Next)
+            {
+                Console.WriteLine(x.Data);
+            }
         }
     }
 }
